@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Siteclaud
 
-## Getting Started
+Siteclaud is a production-shaped SaaS platform for converting webpages into clean, AI-ready Markdown. It includes a premium marketing site, working converter tool, auth routes, dashboard, conversion history, API key endpoint, Prisma/PostgreSQL schema, rate limiting, dark mode, and responsive UI.
 
-First, run the development server:
+## Stack
+
+- Next.js 15 App Router, TypeScript, Tailwind CSS v4
+- shadcn/ui, Framer Motion, Lucide React
+- React Query and Zustand
+- Prisma ORM with PostgreSQL
+- Puppeteer, Cheerio, Readability.js, Turndown
+- Cookie-based auth scaffold with bcrypt password hashing
+
+## Routes
+
+- `/` homepage
+- `/tools`
+- `/tools/convert-webpage-to-markdown`
+- `/tools/convert-pdf-to-markdown`
+- `/pricing`
+- `/features`
+- `/blog`
+- `/login`
+- `/signup`
+- `/dashboard`
+- `/dashboard/history`
+- `/dashboard/api`
+- `/dashboard/settings`
+
+## API
+
+- `POST /api/convert`
+- `POST /api/convert-pdf`
+- `GET /api/history`
+- `DELETE /api/conversion/:id`
+- `POST /api/auth/login`
+- `POST /api/auth/register`
+- `POST /api/api-keys/create`
+
+## Setup
 
 ```bash
+npm install
+cp .env.example .env
+npx prisma generate
+npx prisma db push
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `DATABASE_URL` to a Supabase, Railway, Neon, or local PostgreSQL database. The converter API can run without a database, but saving history, auth, and API keys need PostgreSQL.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verification
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+Both pass in this workspace.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy to Vercel with the same environment variables from `.env.example`. Use Supabase or Railway for PostgreSQL. Puppeteer may need Vercel-compatible Chromium packaging for heavy production workloads; the current implementation includes a fetch fallback for environments where browser launch fails.
