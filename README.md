@@ -16,7 +16,10 @@ Siteclaud is a production-shaped SaaS platform for converting webpages into clea
 - `/` homepage
 - `/tools`
 - `/tools/convert-webpage-to-markdown`
+- `/tools/convert-notion-to-markdown`
+- `/tools/convert-html-to-markdown`
 - `/tools/convert-pdf-to-markdown`
+- `/tools/convert-docx-to-markdown`
 - `/pricing`
 - `/features`
 - `/blog`
@@ -30,7 +33,10 @@ Siteclaud is a production-shaped SaaS platform for converting webpages into clea
 ## API
 
 - `POST /api/convert`
+- `POST /api/convert-notion`
+- `POST /api/convert-html`
 - `POST /api/convert-pdf`
+- `POST /api/convert-docx`
 - `GET /api/history`
 - `DELETE /api/conversion/:id`
 - `POST /api/auth/login`

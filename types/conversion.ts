@@ -30,3 +30,13 @@ export type DocxConversionResponse = {
   tokenEstimate: number;
   fileSize: number;
 };
+
+export type HtmlConversionResponse = {
+  fileName: string | null;
+  title: string;
+  markdown: string;
+  wordCount: number;
+  characterCount: number;
+  tokenEstimate: number;
+  fileSize: number;
+};

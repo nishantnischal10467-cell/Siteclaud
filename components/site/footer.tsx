@@ -3,7 +3,7 @@ import { Code2, MessageCircle, Network } from "lucide-react";
 import { Logo } from "@/components/site/nav";
 
 const groups = [
-  { title: "Tools", links: ["Convert Webpage to Markdown", "Convert PDF to Markdown", "AI Cleanup", "Markdown Beautifier"] },
+  { title: "Tools", links: ["Convert Webpage to Markdown", "Convert Notion to Markdown", "Convert HTML to Markdown", "Convert PDF to Markdown"] },
   { title: "Features", links: ["Chatbot Training", "Lead Capture", "Email Summaries", "Human Escalation"] },
   { title: "Product", links: ["Pricing", "Dashboard", "Integrations", "Changelog"] },
   { title: "Legal", links: ["Privacy", "Terms", "Security", "Contact"] },
