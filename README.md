@@ -17,7 +17,25 @@ Siteclaud is a production-shaped SaaS platform for converting webpages into clea
 - `/tools`
 - `/tools/convert-webpage-to-markdown`
 - `/tools/convert-notion-to-markdown`
+- `/tools/convert-google-docs-to-markdown`
 - `/tools/convert-html-to-markdown`
+- `/tools/convert-xml-to-markdown`
+- `/tools/convert-json-to-markdown`
+- `/tools/convert-csv-to-markdown`
+- `/tools/convert-rtf-to-markdown`
+- `/tools/convert-paste-to-markdown`
+- `/tools/ai-reply-generator`
+- `/tools/ai-prompt-generator`
+- `/tools/ai-prompt-optimizer`
+- `/tools/ai-faq-generator`
+- `/tools/ai-answer-generator`
+- `/tools/ai-email-response-generator`
+- `/tools/ai-letter-generator`
+- `/tools/ai-blog-title-generator`
+- `/tools/ai-chatbot-name-generator`
+- `/tools/ai-saas-brand-name-generator`
+- `/tools/ai-chat-with-your-text-data`
+- `/tools/ai-chat-with-your-website-data`
 - `/tools/convert-pdf-to-markdown`
 - `/tools/convert-docx-to-markdown`
 - `/pricing`
@@ -34,7 +52,25 @@ Siteclaud is a production-shaped SaaS platform for converting webpages into clea
 
 - `POST /api/convert`
 - `POST /api/convert-notion`
+- `POST /api/convert-google-docs`
 - `POST /api/convert-html`
+- `POST /api/convert-xml`
+- `POST /api/convert-json`
+- `POST /api/convert-csv`
+- `POST /api/convert-rtf`
+- `POST /api/convert-paste`
+- `POST /api/ai-reply-generator`
+- `POST /api/ai-prompt-generator`
+- `POST /api/ai-prompt-optimizer`
+- `POST /api/ai-faq-generator`
+- `POST /api/ai-answer-generator`
+- `POST /api/ai-email-response-generator`
+- `POST /api/ai-letter-generator`
+- `POST /api/ai-blog-title-generator`
+- `POST /api/ai-chatbot-name-generator`
+- `POST /api/ai-saas-brand-name-generator`
+- `POST /api/ai-chat-text-data`
+- `POST /api/ai-chat-website-data`
 - `POST /api/convert-pdf`
 - `POST /api/convert-docx`
 - `GET /api/history`

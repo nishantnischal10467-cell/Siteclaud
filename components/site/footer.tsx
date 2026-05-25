@@ -3,9 +3,10 @@ import { Code2, MessageCircle, Network } from "lucide-react";
 import { Logo } from "@/components/site/nav";
 
 const groups = [
-  { title: "Tools", links: ["Convert Webpage to Markdown", "Convert Notion to Markdown", "Convert HTML to Markdown", "Convert PDF to Markdown"] },
+  { title: "Tools", links: ["Convert Webpage to Markdown", "Convert Google Docs to Markdown", "Convert RTF to Markdown", "Convert Paste to Markdown"] },
+  { title: "AI Generators", links: ["AI Prompt Generator", "AI Blog Title Generator", "AI Chatbot Name Generator", "AI SaaS Brand Name Generator"] },
   { title: "Features", links: ["Chatbot Training", "Lead Capture", "Email Summaries", "Human Escalation"] },
-  { title: "Product", links: ["Pricing", "Dashboard", "Integrations", "Changelog"] },
+  { title: "Product", links: ["Pricing", "Integrations", "Changelog", "API Docs"] },
   { title: "Legal", links: ["Privacy", "Terms", "Security", "Contact"] },
 ];
 
